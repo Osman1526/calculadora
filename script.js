@@ -40,12 +40,13 @@ function multiplicacion(){
  
     document.getElementById("resultado").innerText = resultado;
  }
-  function raizcuadrada(){
+  function raizcuadrada() {
     let n1 = parseFloat(document.getElementById("numero1").value);
+    let n2 = parseFloat(document.getElementById("numero2").value);
     let resultado = Math.sqrt(n1);
-   
     document.getElementById("resultado").innerText = resultado;
- }
+}
+
  function division() {
     let n1 = parseFloat(document.getElementById("numero1").value);
     let n2 = parseFloat(document.getElementById("numero2").value);
@@ -53,6 +54,7 @@ function multiplicacion(){
         document.getElementById("resultado").innerText = "Error: División por cero";
         return;
     }
+
     let resultado = n1 / n2;
     document.getElementById("resultado").innerText = resultado;
 }
